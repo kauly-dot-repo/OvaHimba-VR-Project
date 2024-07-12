@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Chopping.unity
-    guid: 189fee01da35d524c8bc7d752ba3cffb
+    path: Assets/Scenes/Building SnapZones.unity
+    guid: 1c3fef8a90ea40649b5cad340e7369ee
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e222fd8025674db4a89a8bc81c07f3c9,
       type: 2}
