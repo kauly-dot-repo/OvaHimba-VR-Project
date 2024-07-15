@@ -1,40 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TreeChopping : MonoBehaviour
 {
-    private Rigidbody rigidBody;
-
-    private void Awake()
+    private void OnCollisionEnter(Collision collision)
     {
-        rigidBody = GetComponent<Rigidbody>();
-        MakeKinematic(); // Make the object kinematic initially
-    }
-
-    private void OnCollisionEnter(Collision collision) //detecting collisions
-    {
-        //collision var contains info about object collided with
-        if(collision.gameObject.tag == "woodInteractable"){
-            MakeDynamic();
-        }        
-    }
-
-    private void MakeKinematic()
-    {
-        if (rigidBody != null)
+        // Check if the collided object has the tag "woodInteractable"
+        if (collision.gameObject.CompareTag("woodInteractable"))
         {
-            rigidBody.isKinematic = true;
-        }
-    }
+            // Get the Rigidbody component of the collided object
+            Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
 
-    private void MakeDynamic()
-    {
-        if (rigidBody != null)
-        {
-            rigidBody.isKinematic = false;
-            rigidBody.velocity = Vector3.zero; // Reset velocity to prevent unintended movement
-            rigidBody.angularVelocity = Vector3.zero; // Reset angular velocity to prevent spinning
+            // Check if the Rigidbody component exists
+            if (rb != null)
+            {
+                // Turn off the kinematic property
+                rb.isKinematic = false;
+
+                // Optionally, you can also enable gravity if needed
+                // rb.useGravity = true;
+            }
         }
     }
 }
