@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - woodInteractable
+  - baseZone
+  - groundZone
+  - wallZone
+  - roofZone
   layers:
   - Default
   - TransparentFX
