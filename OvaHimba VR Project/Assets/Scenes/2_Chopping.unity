@@ -559,6 +559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerOfMass: {x: 0.05, y: 0, z: 0}
+  _rb: {fileID: 0}
 --- !u!114 &76178161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2054,6 +2055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerOfMass: {x: 0.05, y: 0, z: 0}
+  _rb: {fileID: 0}
 --- !u!1001 &202138884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3034,6 +3036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerOfMass: {x: 0.05, y: 0, z: 0}
+  _rb: {fileID: 0}
 --- !u!4 &250695188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7334348630216511087, guid: 543c217d9ccfb3740a93f4bba7d4984f,
@@ -3178,6 +3181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerOfMass: {x: 0.05, y: 0, z: 0}
+  _rb: {fileID: 0}
 --- !u!114 &274021923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3839,6 +3843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerOfMass: {x: 0.05, y: 0, z: 0}
+  _rb: {fileID: 0}
 --- !u!1 &301156893
 GameObject:
   m_ObjectHideFlags: 0
@@ -4300,7 +4305,9 @@ MonoBehaviour:
   minHits: 2
   maxHits: 5
   requiredHits: 0
+  hitCount: 0
   rb: {fileID: 0}
+  prefab: []
 --- !u!1001 &311067153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8713,7 +8720,9 @@ MonoBehaviour:
   minHits: 2
   maxHits: 5
   requiredHits: 0
+  hitCount: 0
   rb: {fileID: 0}
+  prefab: []
 --- !u!1 &749750909
 GameObject:
   m_ObjectHideFlags: 0
@@ -9132,7 +9141,9 @@ MonoBehaviour:
   minHits: 2
   maxHits: 5
   requiredHits: 0
+  hitCount: 0
   rb: {fileID: 0}
+  prefab: []
 --- !u!1001 &756022640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11969,7 +11980,9 @@ MonoBehaviour:
   minHits: 2
   maxHits: 5
   requiredHits: 0
+  hitCount: 0
   rb: {fileID: 0}
+  prefab: []
 --- !u!1001 &1018327278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17563,6 +17576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerOfMass: {x: 0.05, y: 0, z: 0}
+  _rb: {fileID: 0}
 --- !u!114 &1669807363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18718,6 +18732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerOfMass: {x: 0.05, y: 0, z: 0}
+  _rb: {fileID: 0}
 --- !u!114 &1803360243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19540,6 +19555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerOfMass: {x: 0.05, y: 0, z: 0}
+  _rb: {fileID: 0}
 --- !u!114 &1847125646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20662,6 +20678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerOfMass: {x: 0.05, y: 0, z: 0}
+  _rb: {fileID: 0}
 --- !u!114 &1945341298
 MonoBehaviour:
   m_ObjectHideFlags: 0
