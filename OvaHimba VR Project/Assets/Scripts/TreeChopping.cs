@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -14,6 +15,10 @@ public class TreeChopping : MonoBehaviour
 
     private int hitCount = 0;
 
+    public Rigidbody rb;
+    public GameObject prefabAssetRoot;
+    public GameObject[] prefab = PrefabUtility.FindAllInstancesOfPrefab(prefabAssetRoot);
+
     private void Start()
     {
         // Randomize requiredHits on Start
@@ -26,23 +31,39 @@ public class TreeChopping : MonoBehaviour
         if (collision.gameObject.CompareTag("woodInteractable"))
         {
             // Get the Rigidbody component of the collided object
-            Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
-            // Check if the Rigidbody component exists
-            if (rb != null)
+            rb = collision.gameObject.GetComponent<Rigidbody>();
+
+            if (rb == null)
             {
-                hitCount = collision.contactCount;
+                rb = GetComponentInChildren<Rigidbody>();
 
-                if (hitCount >= requiredHits)
+                if (rb != null)
                 {
-                    // Turn on the kinematic property after enough hits
-                    rb.isKinematic = false;
+                    hitCount = collision.contactCount;
 
-                    var grabbableObject = collision.gameObject.GetComponent<XRGrabInteractable>();
-                    if (grabbableObject != null)
+                    if (hitCount >= requiredHits)
                     {
-                        // Set the XR Grab Interactable script to active
-                        grabbableObject.enabled = true;
+                        // Turn on the kinematic property after enough hits
+                        rb.isKinematic = false;
+
+                        var grabbableObject =
+                            collision.gameObject.GetComponent<XRGrabInteractable>();
+                        if (grabbableObject != null)
+                        {
+                            // Set the XR Grab Interactable script to active
+                            grabbableObject.enabled = true;
+                        }
                     }
+                }
+            }
+
+            // Check which type of branch it is
+            foreach (GameObject pf in prefab)
+            {
+                if (collision.gameObject.name == pf.name + "(Clone)")
+                {
+                    Debug.Log("Collided with " + collision.gameObject.name + " which is a " + pf.name + " prefab");
+                    // Additional logic for handling the collision
                 }
             }
         }

@@ -9,6 +9,8 @@ TagManager:
   - groundZone
   - wallZone
   - roofZone
+  - y_branch
+  - l_branch
   layers:
   - Default
   - TransparentFX
