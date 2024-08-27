@@ -197,10 +197,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5bd4f24202d0cdf4fbf2ced8defcf931,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5167731439935049633}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5bd4f24202d0cdf4fbf2ced8defcf931,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4832733350918339107}
   m_SourcePrefab: {fileID: 100100000, guid: 5bd4f24202d0cdf4fbf2ced8defcf931, type: 3}
 --- !u!4 &7334348630216511087 stripped
@@ -415,19 +411,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &5167731439935049633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7963216901585097941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313a70b6184b4f142b580d27d7824110, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  centerOfMass: {x: 0, y: 0, z: -0.2}
 --- !u!114 &4832733350918339107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,3 +426,4 @@ MonoBehaviour:
   minHits: 2
   maxHits: 5
   requiredHits: 0
+  rb: {fileID: 0}

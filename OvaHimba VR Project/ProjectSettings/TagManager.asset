@@ -11,6 +11,11 @@ TagManager:
   - roofZone
   - y_branch
   - l_branch
+  - tool
+  - sand
+  - bucket
+  - dung
+  - collectedDung
   layers:
   - Default
   - TransparentFX
@@ -19,7 +24,7 @@ TagManager:
   - Water
   - UI
   - Stick
-  - 
+  - Draw
   - 
   - 
   - 

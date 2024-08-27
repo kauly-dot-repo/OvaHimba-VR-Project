@@ -5,13 +5,15 @@ using UnityEngine.Events;
 
 public class TriggerEvent : MonoBehaviour
 {
-    [SerializeField] UnityEvent<GameObject> onTriggerEnter;
-    [SerializeField] UnityEvent<GameObject> onTriggerExit;
+    [SerializeField]
+    UnityEvent<GameObject> onTriggerEnter;
+
+    [SerializeField]
+    UnityEvent<GameObject> onTriggerExit;
 
     void OnTriggerEnter(Collider other)
     {
         onTriggerEnter.Invoke(other.gameObject);
-        
     }
 
     void OnTriggerExit(Collider other)

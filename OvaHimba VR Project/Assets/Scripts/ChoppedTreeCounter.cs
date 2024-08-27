@@ -1,10 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using UnityEditor.ProjectWindowCallback;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 public class ChoppedTreeCounter : MonoBehaviour
 {
@@ -30,7 +27,7 @@ public class ChoppedTreeCounter : MonoBehaviour
         List<GameObject> choppedWoodList = new List<GameObject>();
         foreach (GameObject wood in allWoodArray)
         {
-            if (!wood.GetComponent<Rigidbody>().isKinematic)
+            if (!wood.GetComponent<Rigidbody>().isKinematic || !wood.GetComponentInChildren<Rigidbody>().isKinematic)
             {
                 choppedWoodList.Add(wood);
                 if (choppedWoodList.Count == requiredWoodAmount)
