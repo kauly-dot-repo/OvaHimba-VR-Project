@@ -628,7 +628,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &192196519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1276,7 +1276,10 @@ MonoBehaviour:
   minHits: 2
   maxHits: 5
   requiredHits: 0
-  rb: {fileID: 0}
+  treesChopped: []
+  treesInScene: []
+  collisionCounter: 0
+  sceneTransition: {fileID: 0}
 --- !u!114 &657726835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1661,7 +1664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: ed82bdf2987ae4049a80357e22a5ab90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.053
+      value: 0.036
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: ed82bdf2987ae4049a80357e22a5ab90, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2536,7 +2539,10 @@ MonoBehaviour:
   minHits: 2
   maxHits: 5
   requiredHits: 0
-  rb: {fileID: 0}
+  treesChopped: []
+  treesInScene: []
+  collisionCounter: 0
+  sceneTransition: {fileID: 0}
 --- !u!114 &966299139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3001,7 +3007,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2d9174cbf1732c748a6f7b8786f52f84, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3113,8 +3119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3bf25d3984ff8408ce23dbffc21b8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerArea: {fileID: 0}
-  audioSource: {fileID: 0}
+  triggerArea: {fileID: 1998624425}
+  audioSource: {fileID: 1387074838}
 --- !u!1 &1464453484
 GameObject:
   m_ObjectHideFlags: 0

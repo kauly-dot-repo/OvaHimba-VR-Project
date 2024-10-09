@@ -981,7 +981,7 @@ PrefabInstance:
     - target: {fileID: 482865905105342247, guid: 0090e570c1b2a5d49ae8fe2f39382228,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.902
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: 482865905105342247, guid: 0090e570c1b2a5d49ae8fe2f39382228,
         type: 3}
@@ -6747,11 +6747,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fader Screen
-      objectReference: {fileID: 0}
-    - target: {fileID: 5285066464814402778, guid: 7affbeea7e0d5254a949e70056d72be8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16317,7 +16312,7 @@ PrefabInstance:
     - target: {fileID: 482865905105342247, guid: 0090e570c1b2a5d49ae8fe2f39382228,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.89
+      value: -0.949
       objectReference: {fileID: 0}
     - target: {fileID: 482865905105342247, guid: 0090e570c1b2a5d49ae8fe2f39382228,
         type: 3}
@@ -18233,6 +18228,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Transition Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674828387724981540, guid: 91b707733885c8b4888c82103366c289,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8181225514586804482, guid: 91b707733885c8b4888c82103366c289,
         type: 3}
@@ -20310,7 +20310,7 @@ PrefabInstance:
     - target: {fileID: 482865905105342247, guid: 0090e570c1b2a5d49ae8fe2f39382228,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.886
+      value: -0.964
       objectReference: {fileID: 0}
     - target: {fileID: 482865905105342247, guid: 0090e570c1b2a5d49ae8fe2f39382228,
         type: 3}
@@ -20435,7 +20435,6 @@ GameObject:
   - component: {fileID: 1257175578}
   - component: {fileID: 1257175577}
   - component: {fileID: 1257175576}
-  - component: {fileID: 1257175575}
   m_Layer: 0
   m_Name: XR Right Hand
   m_TagString: Untagged
@@ -20458,25 +20457,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 852620774}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1257175575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257175573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 364254a3c87adca49943d46810ca2d6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minHits: 2
-  maxHits: 5
-  requiredHits: 0
-  treesChopped: []
-  treesInScene: []
-  collisionCounter: 0
-  sceneTransition: {fileID: 0}
 --- !u!114 &1257175576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23450,7 +23430,6 @@ GameObject:
   - component: {fileID: 1532339890}
   - component: {fileID: 1532339889}
   - component: {fileID: 1532339888}
-  - component: {fileID: 1532339887}
   m_Layer: 0
   m_Name: XR Left Hand
   m_TagString: Untagged
@@ -23473,25 +23452,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 852620774}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1532339887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532339885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 364254a3c87adca49943d46810ca2d6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minHits: 2
-  maxHits: 5
-  requiredHits: 0
-  treesChopped: []
-  treesInScene: []
-  collisionCounter: 0
-  sceneTransition: {fileID: 0}
 --- !u!114 &1532339888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24589,7 +24549,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6d95ebd1213ce6a49946356c2dc966fe, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -26414,7 +26374,7 @@ PrefabInstance:
     - target: {fileID: 482865905105342247, guid: 0090e570c1b2a5d49ae8fe2f39382228,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.927
+      value: -0.944
       objectReference: {fileID: 0}
     - target: {fileID: 482865905105342247, guid: 0090e570c1b2a5d49ae8fe2f39382228,
         type: 3}
@@ -27118,7 +27078,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: ed82bdf2987ae4049a80357e22a5ab90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.034
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: ed82bdf2987ae4049a80357e22a5ab90, type: 3}
       propertyPath: m_LocalPosition.z
